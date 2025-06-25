@@ -27,7 +27,7 @@ public class LoginAPITest {
             .post("/api/login")
         .then()
             .log().all()
-            .statusCode(200)
+            .statusCode(200) //зараза!
             .body("token", notNullValue());
     }
 
